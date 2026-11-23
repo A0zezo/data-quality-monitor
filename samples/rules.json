@@ -1,0 +1,10 @@
+{
+  "columns": {
+    "order_id": {"not_null": true, "unique": true},
+    "email": {"not_null": true, "regex": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"},
+    "age": {"min": 0, "max": 120},
+    "plan": {"allowed_values": ["free", "pro", "team"]},
+    "amount": {"min": 0}
+  },
+  "max_null_rate": 0.05
+}
